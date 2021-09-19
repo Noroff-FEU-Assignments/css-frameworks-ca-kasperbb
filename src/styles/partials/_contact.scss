@@ -19,6 +19,16 @@
 	}
 
 	&-form {
+		.input-group
+			> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+			border-radius: 0.25rem;
+
+			@media (min-width: getBreakpoint(md)) {
+				border-top-left-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+		}
+
 		input[type='checkbox'] {
 			position: absolute;
 			opacity: 0;
