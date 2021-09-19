@@ -1,0 +1,50 @@
+.contact {
+	&-info {
+		&__item {
+			display: flex;
+			align-items: flex-start;
+			gap: 1rem;
+			margin-bottom: 1rem;
+			color: $secondary;
+
+			svg {
+				width: 1rem;
+			}
+
+			dl,
+			dd {
+				margin: 0;
+			}
+		}
+	}
+
+	&-form {
+		input[type='checkbox'] {
+			position: absolute;
+			opacity: 0;
+			z-index: -9999;
+
+			+ label {
+				position: relative;
+				padding-left: 3rem;
+				line-height: 17px;
+				color: $secondary;
+
+				#fakebox {
+					position: absolute;
+					left: 0;
+					display: block;
+					width: 34px;
+					height: 34px;
+					background: $white;
+					border-radius: 4px;
+					cursor: pointer;
+				}
+			}
+
+			&:checked + label #fakebox {
+				background: $primary;
+			}
+		}
+	}
+}

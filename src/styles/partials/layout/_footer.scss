@@ -1,0 +1,9 @@
+.social {
+	display: flex;
+	gap: 1rem;
+
+	&__icon {
+		height: 30px;
+		color: getColor(secondary);
+	}
+}

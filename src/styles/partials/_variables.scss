@@ -1,0 +1,26 @@
+$primary: #e92569;
+$secondary: #767676;
+$dark: #0a0a0a;
+$border: #d1d1d1;
+
+$gradient: (
+	from: #ffffff,
+	to: #e5e5e5,
+);
+
+$breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+);
+
+@function getGradient() {
+	@return map-get($gradient, from), map-get($gradient, to);
+}
+
+@function getBreakpoint($breakpoint) {
+	@return map-get($breakpoints, $breakpoint);
+}

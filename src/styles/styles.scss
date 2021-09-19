@@ -1,0 +1,17 @@
+@import 'partials/variables';
+
+@import 'bootstrap/scss/bootstrap';
+
+@import 'partials/layout/layout';
+@import 'partials/layout/nav';
+@import 'partials/layout/footer';
+
+@import 'partials/fonts';
+@import 'partials/carousel';
+@import 'partials/tabCard';
+@import 'partials/card';
+@import 'partials/pagination';
+@import 'partials/contact';
+@import 'partials/overwrites';
+
+@import 'partials/utils/screenreaders';

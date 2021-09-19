@@ -1,0 +1,34 @@
+.navbar {
+	padding: 15px 0 15px 0;
+	box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
+
+	@media (min-width: getBreakpoint(lg)) {
+		box-shadow: none;
+	}
+
+	&-brand {
+		a {
+			color: getColor(primary) !important;
+			text-decoration: none;
+			font-family: 'Playfair Display', serif;
+			font-style: italic;
+			font-weight: bold;
+		}
+	}
+
+	&-nav {
+		.me-auto {
+			max-height: 26px;
+		}
+
+		.nav-link {
+			text-decoration: none !important;
+		}
+	}
+
+	.nav-link.active {
+		@media (min-width: getBreakpoint(lg)) {
+			border-radius: 3px;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.carousel {
+	&-indicators {
+		gap: 1rem;
+
+		button {
+			&[data-bs-target] {
+				width: 30px;
+				height: 30px;
+				background-color: $white;
+				opacity: 1;
+				border-radius: 2px;
+				box-shadow: 0px 3px 6px $black;
+				border-bottom: none;
+				border-top: none;
+			}
+
+			&[aria-current='true'] {
+				background-color: $primary;
+			}
+		}
+	}
+
+	img {
+		object-fit: cover;
+		min-height: 287px;
+		max-height: 462px;
+	}
+}

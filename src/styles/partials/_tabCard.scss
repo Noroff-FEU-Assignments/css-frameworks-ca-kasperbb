@@ -1,0 +1,80 @@
+.tabCard {
+	&__icon {
+		width: 25px;
+		height: 25px;
+	}
+}
+
+.tabs {
+	width: 99%;
+	border-bottom: 1px solid $border;
+	border: none;
+
+	.nav-item {
+		button {
+			padding: 10px 30px;
+			border-radius: 10px 10px 0 0;
+			color: $secondary;
+			border-color: $border;
+			border-bottom-color: transparent;
+		}
+
+		button:not(.active) {
+			color: $primary;
+			border-color: transparent;
+		}
+	}
+}
+
+.tab-pane {
+	background-color: $white;
+	border: 1px solid $border;
+	padding: 40px;
+	box-shadow: 0px 16px 22px rgba(0, 0, 0, 0.06);
+}
+
+.accordion {
+	box-shadow: 0px 16px 22px rgba(0, 0, 0, 0.06);
+	border-radius: 0 0 10px 10px;
+
+	&-button {
+		color: $primary;
+
+		&:not(.collapsed) {
+			background-color: $white;
+			border-bottom: 1px solid $primary;
+			box-shadow: none;
+		}
+
+		&::after {
+			background-image: none !important;
+		}
+	}
+
+	&-collapse {
+		background: radial-gradient($white, #f5f5f5);
+	}
+
+	&-item {
+		border-right: none;
+		border-left: none;
+
+		&:first-of-type {
+			border-top: none;
+			border-radius: 10px 10px 0 0;
+		}
+
+		&:last-of-type {
+			border-bottom: none;
+			border-radius: 0 0 10px 10px;
+		}
+
+		&:first-of-type .accordion-button {
+			border-radius: 10px 10px 0 0;
+		}
+
+		&:last-of-type .accordion-button.collapsed {
+			border-radius: 0 0 10px 10px;
+		}
+	}
+}
