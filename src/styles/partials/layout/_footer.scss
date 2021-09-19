@@ -1,9 +1,14 @@
 .social {
 	display: flex;
 	gap: 1rem;
+	width: 100%;
+
+	@media (min-width: getBreakpoint(lg)) {
+		width: auto;
+	}
 
 	&__icon {
 		height: 30px;
-		color: getColor(secondary);
+		color: $secondary;
 	}
 }

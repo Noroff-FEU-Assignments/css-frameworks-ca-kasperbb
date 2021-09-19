@@ -3,8 +3,8 @@ import Container from 'react-bootstrap/Container'
 const Footer = () => {
 	return (
 		<footer className="bg-white">
-			<Container className="py-3 d-flex justify-content-between">
-				<div className="social">
+			<Container className="py-3 d-flex justify-content-between flex-wrap">
+				<div className="social d-flex justify-content-center mb-3 mb-md-0">
 					<svg
 						aria-hidden="true"
 						focusable="false"

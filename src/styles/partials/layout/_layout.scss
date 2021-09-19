@@ -1,9 +1,10 @@
 body,
-html {
-	height: 100%;
+html,
+#root {
+	min-height: 100vh;
 }
 
-body {
+#root {
 	display: flex;
 	flex-direction: column;
 	background: radial-gradient(getGradient()) !important;
